@@ -6,6 +6,24 @@
   height: 40vmin;
   pointer-events: none;
 }
+ .cards-container {
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 10px; 
+}
+
+@media (max-width: 768x) {
+  .cards-container {
+    grid-template-columns: 2fr; 
+    gap: 10px;
+  }
+} 
+
+
+
+
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
